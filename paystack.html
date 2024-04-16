@@ -7,56 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<style>
-     *{
-    margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-    }
-    body{
-        font-family: "Poppins";
-        font-size: 16px;
-    }
-   header{
-      background-color:rgb(241,254,244)
-    }
- 
-   a{
-    text-decoration: none;
-   }
-   ul{
-    list-style: none;
-   }
-   nav{
-    display: flex;
-    gap: 1rem;
-    height: 16dvh;
-    align-items: center;
-    margin-inline: 3rem;
-   }
-   .nav_link_group{
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-between;    
-   }
-   .nav_link_group ul{
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-   }
-   button{
-    background-color: rgb(59,183,94);
-    color: white;
-    padding: 12px 18px ;
-    border-radius: 0.3125rem;
-    border: none;
-    cursor: pointer;
- 
-
-   }
-
-
-</style>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/b8c23fd941.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -64,6 +16,10 @@
         <div class="logo">
             <img src="paystackimage.svg" alt="paystack logo">
         </div>
+        <div class="mobile-icon" id="hanburger">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+        
         <div class="nav_link_group">
             <ul>
                 <li><a href="https://paystack.com/">Why Paystack</a></li>

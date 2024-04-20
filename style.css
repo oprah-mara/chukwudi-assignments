@@ -25,6 +25,10 @@
     margin-inline: 1rem;
     justify-content: space-between;
    }
+   .logo{
+    display: flex;
+    align-items: center;
+   }
    .mobile-icon{
     cursor: pointer;
    }
@@ -54,7 +58,7 @@
 
    }
    .nav_link_group ul li{
-    width: 100%;
+    width: auto;
    }
    .nav_link_group ul li img{
     display: none;
@@ -79,12 +83,11 @@
     }
     nav{
         display: flex;
-        gap: 1rem;
+        gap: 2rem;
         height: 16dvh;
         align-items: center;
         margin-inline: 3rem;
         justify-content: space-between;
-        border: 5px solid red;
        }
        .nav_link_group{
         display: flex;
@@ -94,21 +97,23 @@
         visibility: visible !important;
         opacity: 1 !important;
         height: auto;
-        border: 2px solid blue;
         padding: 0;
         justify-content: space-between;
-       
        }
        .nav_link_group ul{
         flex-direction: row;
         display: flex;
         gap: 1rem;
         align-items: center;
-        border: 3px solid red;
-
+       }
+       #login{
+        color: black;
        }
        button{
         width: 100%;
+       }
+       .nav_link_group ul li img{
+        display: block;
        }
 
    }

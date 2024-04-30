@@ -17,51 +17,70 @@ let fourthLink = document.getElementById("fourthlink")
 let sub_4 = document.getElementById("sub-4")
 let leftBar = document.getElementById ("left-bar")
 
-let subBackIcons = document.querySelectorAll("[data-subBackIcon]")
+let subbackicons = document.querySelectorAll("[data-subbackicon]")
+let sublink = document.querySelectorAll ("[data-sublink]")
 
 
-subBackIcons.forEach(function(item){
+subbackicons.forEach(function(item){
   item.addEventListener("click",function(){
-    if(item.dataset.subBackIcon == "sub-1"){
+    if(item.dataset.subbackicon == "sub-1"){
         sub1.style.left = "100%";  
-    }else if(item.dataset.subBackIcon == "sub-2")
-    {
+    }else if(item.dataset.subbackicon == "sub-2"){
         sub_2.style.left = "100%"; 
+    }else if(item.dataset.subbackicon == "sub-3"){
+        sub_3.style.left = "100%"; 
+    }else if(item.dataset.subbackicon == "sub-4"){
+        sub_4.style.left = "100%"; 
     }
-        navGroup.style.left = "0"
+        navGroup.style.left = "0";
+})
+})
+
+sublink.forEach(function(item){
+    item.addEventListener("click",function(){
+        if(item.dataset.sublink == "firstlink"){
+            sub1.style.left = "0";   
+        }else if (item.dataset.sublink == "secondlink"){
+            sub_2.style.left = "0";  
+        }else if (item.dataset.sublink == "thirdlink"){
+            sub_3.style.left = "0";  
+        }else if (item.dataset.sublink == "fourthlink"){
+            sub_4.style.left = "0";  
+        }
+        navGroup.style.left = "-100%"
     })
 })
 
-firstlink.addEventListener("click",function(){
-    navGroup.style.left = "-100%"
-    sub1.style.left = "0"  
-})
+// firstlink.addEventListener("click",function(){
+//     navGroup.style.left = "-100%"
+//     sub1.style.left = "0"  
+// })
 // backIcon.addEventListener("click",function(){
 //     sub1.style.left = "100%"
 //     navGroup.style.left = "0"
 // })
 
-secondLink.addEventListener("click", function(){
-    navGroup.style.left = "-100%"
-    sub_2.style.left = "0"
-})
+// secondLink.addEventListener("click", function(){
+//     navGroup.style.left = "-100%"
+//     sub_2.style.left = "0"
+// })
 // caret_left.addEventListener("click",function(){
 //     sub_2.style.left = "100%"
 //     navGroup.style.left = "0"
 // })
 
-thirdLink.addEventListener("click",function(){
-    navGroup.style.left = "-100%"
-    sub_3.style.left = "0"
-})
+// thirdLink.addEventListener("click",function(){
+//     navGroup.style.left = "-100%"
+//     sub_3.style.left = "0"
+// })
 // leftCaret.addEventListener("click",function(){
 //     sub_3.style.left = "100%"
 //     navGroup.style.left = "0"
 // })
-fourthLink.addEventListener("click",function(){
-    navGroup.style.left = "-100%"
-    sub_4.style.left = "0"
-})
+// fourthLink.addEventListener("click",function(){
+//     navGroup.style.left = "-100%"
+//     sub_4.style.left = "0"
+// })
     // leftBar.addEventListener('click',function(){
     //     sub_4.style.left = "100%"
     //     navGroup.style.left = "0"

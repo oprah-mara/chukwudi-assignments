@@ -11,102 +11,128 @@
 <script src="https://kit.fontawesome.com/b8c23fd941.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-    <nav>
-        <div class="logo">
-            <img src="paystackimage.svg" alt="paystack logo">
-        </div>
-        <div class="mobile-icon" id="hanburger">
-            <i class="fa-solid fa-bars-staggered"></i>
-        </div>
-        
-        <div id="nav_link_group" class="nav_link_group">
-            <ul>
-                <li data-sublink="firstlink" id="firstlink" class="caret">Why Paystack<span class="caret-down"><i class="fa-solid fa-caret-right"></i><i class="fa-solid fa-caret-down"></i></span></i></li>
-                <li><a href="https://paystack.com/">Customers</a></li>
-                <li><a href="https://paystack.com/">Pricing</a></li>
-                <li data-sublink="secondlink" id="secondlink" class="caret">Learn<span class="caret-down"><i class="fa-solid fa-caret-right"></i><i class="fa-solid fa-caret-down"></i></span></li>    
-            </ul>
-            <ul>
-                <li data-sublink="thirdlink" id="thirdlink" class="caret">Developers <span class="caret-down"><i class="fa-solid fa-caret-right"></i><i class="fa-solid fa-caret-down"></i></span></li>
-                <li data-sublink="fourthlink" id="fourthlink" class="caret">Support<span class="caret-down"><i class="fa-solid fa-caret-right"></i><i class="fa-solid fa-caret-down"></i></span></li>
-                <li><a href="https://paystack.com/" id="login">Login</a></li>
-                <li><button>Create free account</button></li>
-                <li><img src="ng.svg.svg" alt=""></li> 
-            </ul>
-        </div>
-        <div id="sub-1" class="sub-container">
-            <span  id="backIcon" class="Back" data-subbackicon="sub-1">
-            <i class="fa-solid fa-caret-left"></i> 
-             Back</span>
-            <ul class="submenu-1">
-                <li>Why Choose Paystack</li>
-                <li><a href="">Success Rates</a></li>   
-                <li><a href="">Demo</a></li>  
-            </ul>
-            <ul class="submenu-2">
-                <li>YOUR GROWTH STAGE</li>
-                <li><a href="">For Entrepreneurs</a></li>
-                <li><a href="">For Corporates</a></li>
-                <li><a href="">For Global Brands</a></li>  
-                <li><a href="">For Startups</a></li> 
-            </ul>
-        </div>
-        <div id="sub-2" class="sub_container_two">
-            <span  id="caret-left"  data-subbackicon="sub-2">
-                <i class="fa-solid fa-caret-left"></i> 
-                 Back</span>
-            <ul class="section_one">
-                <li>Blog</li>
-                <li>Guides</li>
-                <li>Video Tutorials</li>
-                <li>Decode Fintech</li>
-                <li>Commerce</li>
-            </ul>
-            <p id="section_text">company</p>
-            <ul class="section_two">
-                <li>About Us</li>
-                <li>Changelog</li>
-                <li>Compliance</li>
-                <li>Careers</li>
-                <li>Brand</li>
-                <li>Media Kit</li>
-                <li>Privacy & Terms</li>
-            </ul>
-        </div>
-        <div id="sub-3" class="sub_container_three">
-            <span  id="left-caret"  data-subbackicon="sub-3">
-                <i class="fa-solid fa-caret-left"></i> 
-                 Back</span>
-            <ul>
-                <li>Overview</li>
-                <li>Documentation</li>
-                <li>Integrations</li>
-                <li>Status</li>
-            </ul>
-        </div>
-        <div id="sub-4" class="sub_container_four">
-            <span  id="left-bar"  data-subbackicon="sub-4">
-                <i class="fa-solid fa-caret-left"></i> 
-                 Back</span>
-            <ul>
-                <li>Quick Help</li>
-                <li>Contact Us</li>
-                <li>Why was I debited</li>
-            </ul>
-        </div>
-
-    </nav>
-    </header>
-
-    <main>
-
-    </main>
-
-    <footer>
-
-    </footer>
-    <script src="index.js"></script>
+<header>
+<nav>
+    <div class="logo">
+        <img src="paystackimage.svg" alt="paystack logo">
+    </div>
+    <div class="mobile-icon" id="hanburger">
+        <i class="fa-solid fa-bars-staggered"></i>
+    </div>
     
+    <div id="nav_link_group" class="nav_link_group">
+        <ul>
+            <li data-sublink="firstlink" id="firstlink" class="caret">Why Paystack<span class="caret-down"><i class="fa-solid fa-caret-right"></i><i class="fa-solid fa-caret-down"></i></span></i></li>
+            <li><a href="https://paystack.com/">Customers</a></li>
+            <li><a href="https://paystack.com/">Pricing</a></li>
+            <li data-sublink="secondlink" id="secondlink" class="caret">Learn<span class="caret-down"><i class="fa-solid fa-caret-right"></i><i class="fa-solid fa-caret-down"></i></span></li>    
+        </ul>
+        <ul>
+            <li data-sublink="thirdlink" id="thirdlink" class="caret">
+            Developers <span class="caret-down">
+                <i class="fa-solid fa-caret-right"></i>
+                <i class="fa-solid fa-caret-down"></i>
+            </span>
+                    <!-- this is desktop -->
+            <ul id="sub-3desktop" class="sub_container_desktop">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li><a href="#">Status</a></li>
+                </ul>
+            </li>
+            <li data-sublink="fourthlink" id="fourthlink" class="caret">
+                Support<span class="caret-down"><i class="fa-solid fa-caret-right">
+                </i><i class="fa-solid fa-caret-down"></i>
+            </span>
+            <!-- this is desktop -->
+                <ul id="sub-4desktop" class="sub-desktop4">
+                    <li><a href="#">Quick Help</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Why Was I debited</a></li>
+                    </ul>
+                </li>
+            <li><a href="https://paystack.com/" id="login">Login</a></li>
+            <li><button>Create free account</button></li>
+            <li><img src="ng.svg.svg" alt=""></li> 
+        </ul>
+    </div>
+    <div id="sub-1" class="sub-container">
+        <span  id="backIcon" class="Back" data-subbackicon="sub-1">
+        <i class="fa-solid fa-caret-left"></i> 
+            Back</span>
+        <ul class="submenu-1">
+            <li>Why Choose Paystack</li>
+            <li><a href="">Success Rates</a></li>   
+            <li><a href="">Demo</a></li>  
+        </ul>
+        <ul class="submenu-2">
+            <li>YOUR GROWTH STAGE</li>
+            <li><a href="">For Entrepreneurs</a></li>
+            <li><a href="">For Corporates</a></li>
+            <li><a href="">For Global Brands</a></li>  
+            <li><a href="">For Startups</a></li> 
+        </ul>
+    </div>
+    <div id="sub-2" class="sub_container_two">
+        <span  id="caret-left"  data-subbackicon="sub-2">
+            <i class="fa-solid fa-caret-left"></i> 
+                Back</span>
+        <ul class="section_one">
+            <li>Blog</li>
+            <li>Guides</li>
+            <li>Video Tutorials</li>
+            <li>Decode Fintech</li>
+            <li>Commerce</li>
+        </ul>
+        <p id="section_text">company</p>
+        <ul class="section_two">
+            <li>About Us</li>
+            <li>Changelog</li>
+            <li>Compliance</li>
+            <li>Careers</li>
+            <li>Brand</li>
+            <li>Media Kit</li>
+            <li>Privacy & Terms</li>
+        </ul>
+    </div>
+    <div id="sub-3" class="sub_container_three">
+        <span  id="left-caret"  data-subbackicon="sub-3">
+            <i class="fa-solid fa-caret-left"></i> 
+                Back</span>
+        <ul>
+            <li>Overview</li>
+            <li>Documentation</li>
+            <li>Integrations</li>
+            <li>Status</li>
+        </ul>
+    </div>
+    <div id="sub-4" class="sub_container_four">
+        <span  id="left-bar"  data-subbackicon="sub-4">
+            <i class="fa-solid fa-caret-left"></i> 
+                Back</span>
+        <ul>
+            <li>Quick Help</li>
+            <li>Contact Us</li>
+            <li>Why was I debited</li>
+        </ul>
+    </div>
+    
+</nav>
+</header>
+
+<main>
+
+</main>
+
+<footer>
+
+</footer>
+<script>
+   
+ 
+</script>
+
+
 </body>
 </html>

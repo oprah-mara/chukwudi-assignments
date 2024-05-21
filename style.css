@@ -7,6 +7,7 @@
 body {
     font-family: "Poppins";
     font-size: 16px;
+    background-color: rgb(241, 254, 244);
 }
 
 header {
@@ -128,7 +129,9 @@ button {
     cursor: pointer;
     width: 100%;
 }
-
+.sub_container_desktop, .sub-desktop4{
+    display: none !important;
+}
 @media (min-width: 1020px) {
     .mobile-icon {
         display: none;
@@ -155,7 +158,7 @@ button {
         justify-content: space-between;
     }
 
-    .nav_link_group ul {
+    .nav_link_group > ul {
         flex-direction: row;
         display: flex;
         gap: 1rem;
@@ -186,7 +189,40 @@ button {
         display: none !important;
     }
 
-    .sub-container {
-        display: none;
+    .sub-container, .sub_container_two, .sub_container_three, .sub_container_four{
+        display: none !important;
+    }
+    
+    [data-sublink]{
+       position: relative;
+    }
+    .sub_container_desktop, .sub-desktop4{
+    background-color: white;
+    display: flex !important;
+    position: absolute;
+    top: calc(100% + 1rem);
+    gap: 1rem;
+    padding: 1rem .8rem;
+    border-radius: 5px;
+    box-shadow: 1px 2px 8px rgb(206, 204, 204) ;
+    width: 150px;
+    font-size: 14px;
+    visibility: hidden;
+    opacity: 0;
+    }
+    .subdesktop_helper{
+        visibility: visible;
+        opacity: 1;
+        transition: all ease-in-out 150ms ;
+        animation: bottomToTop 150ms ease-in;
+    }
+    
+    @keyframes bottomToTop {
+        from{
+            transform: translateY(.5rem);
+        }
+        to{
+            transform: translateY(0);
+        }
     }
 }

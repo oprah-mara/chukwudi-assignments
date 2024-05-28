@@ -4,26 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/b8c23fd941.js" crossorigin="anonymous"></script>
+    <style>
+        .learn_container{
+            display: flex;
+            color: rgb(26,49,71);
+            border: 2px solid black;
+            width: fit-content;
+            
+            
+        }
+      .learn_container ul{
+        list-style-type: none;
+      }
+      .learn_container a {
+        text-decoration: none;
+        color: rgb(26,49,71);
+        font-weight: 600;
+      }
+      .learn_section_one ul{
+        display: flex;
+        border: 2px solid black;
+        
+      }
+      .learn_wrap{
+        margin: 0 14px;
+        border: 1px solid purple;
+
+      }
+      .fa-lightbulb, .fa-telegram, .fa-play, .fa-d{
+        font-size:  40px; 
+        margin: 3px 0;
+        background-color: rgb(1,27,51);
+        color:rgb(11,164,219);
+        border-radius: 100%;
+        padding: 10px;
+        width: fit-content;
+      }
+
+    </style>
 </head>
 <body>
-    this is body 
+    <div class="learn_container">
+        <div class="learn_section_one">
+            <ul class="learn_one">
+                <li><i class="fa-regular fa-lightbulb"></i></li>
+                <div class="learn_wrap">
+                <li><a href="#">Blog</a></li>
+                <li>Original lessons about making the <br>
+                    internet work for your business</li>
+                </div>
+            </ul>
+            <ul>
+                <li><i class="fa-brands fa-telegram"></i></li>
+                <div class="learn_wrap">
+                <li><a href="#">Guides</a></li>
+                <li>Big ideas in payments, explained in <br>
+                    simple English</li>
+                </div>
+            </ul>
+            <ul>
+                <li><i class="fa-solid fa-play"></i></li>
+                <div class="learn_wrap">
+                <li><a href="#">Video Tutorials</a></li>
+                <li>Quick video tutorials on how to use <br>
+                    paystack</li>
+                </div>
+            </ul>
+            <ul>
+                <li><i class="fa-solid fa-d"></i></li>
+                <div class="learn_wrap">
+                <li><a href="#">Decode Fintech</a></li>
+                <li>The trade email newsletter and <br>
+                    podcast for leaders in African <br>
+                    fintech</li>
+                </div>
+            </ul>
+        </div>
+        <div>
+            <ul class="learn_section_two">
+                <li class="section_sharedClass">COMPANY</li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Changelog</a></li>
+                <li><a href="#">Subscribe</a></li>
+                <li><a href="#">Compliance</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Brand</a></li>
+                <li><a href="#">Media Kit</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+
+
+
 </body>
-<script>
-    let phoneNumber = 1;
-let name1, name2;
-name1 = "cynthia";
-name2 = "opr";
-console.log(name1);
-console.log(name2);
-
-const fruits = ["Apple", "Orange", "Pear"];
-fruits.forEach(function(favFruits){
-    console.log(favFruits)
-})
-const igboNames = ["Amara", "Opara"];
-igboNames.forEach (igboNames=> console.log (igboNames));
-
-const names = ["Amarachi", "opara"]
-
-</script>
 </html>

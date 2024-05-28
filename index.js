@@ -19,19 +19,23 @@ let leftBar = document.getElementById("left-bar");
 
 let subbackicons = document.querySelectorAll("[data-subbackicon]");
 let sublink = document.querySelectorAll("[data-sublink]");
-let subcontainerDesktop = document.getElementById("sub-3desktop");
+let sub3Desktop = document.getElementById("sub-3desktop");
 let sub4Desktop = document.getElementById("sub-4desktop");
+
+let whypaystackMain = document.getElementById("whypaystack_mainContainer");
+let learnContainer = document.getElementById("learn_main_container");
+
 
 
 hanburger.addEventListener("click", function(){
-    console.log("i am here")
-    // if(navGroup.style.visibility === "visible"){
-    //     navGroup.style.visibility = "hidden";
-    //     navGroup.style.opacity ="0"
-    // } else{
-    //     navGroup.style.visibility = "visible";
-    //      navGroup.style.opacity = "1";
-    //     }
+
+    if(navGroup.style.visibility === "visible"){
+        navGroup.style.visibility = "hidden";
+        navGroup.style.opacity ="0"
+    } else{
+        navGroup.style.visibility = "visible";
+         navGroup.style.opacity = "1";
+        }
        });
 
 // for backIcon
@@ -48,7 +52,9 @@ subbackicons.forEach(function(item){
     }
         navGroup.style.left = "0";
 })
-})
+});
+
+
 // subcontainer
 sublink.forEach(function(item){
     item.addEventListener("click",function(){
@@ -61,16 +67,46 @@ sublink.forEach(function(item){
         }else if (item.dataset.sublink == "fourthlink"){
             sub_4.style.left = "0";  
         }
-    
         navGroup.style.left = "-100%"
     })
+
+
     item.addEventListener("mouseover", ()=>{
-        subcontainerDesktop.classList.add("subdesktop_helper");
-        });
+        if(item.dataset.sublink == "thirdlink"){
+            sub3Desktop.classList.add("subdesktop_helper");
+        } 
+        else if (item.dataset.sublink == "fourthlink"){
+            sub4Desktop.classList.add("subdesktop_helper");
+        }
+        else if (item.dataset.sublink == "firstlink"){
+            whypaystackMain.classList.add("subdesktop_helper");
+        }
+        else if (item.dataset.sublink == "secondlink"){
+            learnContainer.classList.add("subdesktop_helper");
+        }
+        
         item.addEventListener("mouseout", ()=>{ 
-            subcontainerDesktop.classList.remove("subdesktop_helper");
+            if(item.dataset.sublink == "thirdlink"){
+                sub3Desktop.classList.remove("subdesktop_helper");
+            }
+            else if (item.dataset.sublink == "fourthlink"){
+                sub4Desktop.classList.remove("subdesktop_helper");
+            }
+            else if (item.dataset.sublink == "firstlink"){
+                whypaystackMain.classList.remove("subdesktop_helper");
+            }
+            else if (item.dataset.sublink == "secondlink"){
+                learnContainer.classList.remove("subdesktop_helper");
+            }
+
+            
         });
 })
+});
+
+
+
+
 // sublink.forEach(link =>{
 //     link.addEventListener("mouseover", ()=>{
 //        subcontainerDesktop.classList.add("subdesktop_helper");
@@ -112,19 +148,7 @@ sublink.forEach(function(item){
 //     navGroup.style.left = "-100%"
 //     sub_4.style.left = "0"
 // })
-    // leftBar.addEventListener('click',function(){
-    //     sub_4.style.left = "100%"
-    //     navGroup.style.left = "0"
-    // })
-
-
-
-
-
-
-
-
-
-
-
-
+//     leftBar.addEventListener('click',function(){
+//         sub_4.style.left = "100%"
+//         navGroup.style.left = "0"
+//     })

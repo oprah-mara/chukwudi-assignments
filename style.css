@@ -132,6 +132,8 @@ button {
 .sub_container_desktop, .sub-desktop4{
     display: none !important;
 }
+
+/* this is desktop */
 @media (min-width: 1020px) {
     .mobile-icon {
         display: none;
@@ -225,4 +227,207 @@ button {
             transform: translateY(0);
         }
     }
+
+    .whypaystack_Container{
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        width: 81vh;
+        position: absolute;
+        top: calc(100% + 1rem);
+        color: rgb(26,49,71);
+        box-shadow: 10px 5px 15px 3px rgba(0, 0, 0, 0.1);
+        visibility: hidden;
+        opacity: 0;    
+    }
+    .subdesktop_helper{
+        visibility: visible;
+        opacity: 1;
+        transition: all ease-in-out 150ms ;
+        animation: bottomToTop 150ms ease-in;
+    }
+    
+    @keyframes bottomToTop {
+        from{
+            transform: translateY(.5rem);
+        }
+        to{
+            transform: translateY(0);
+        }
+    }
+    .fa-trophy, .fa-gift, .fa-arrow-trend-up{
+        font-size: 30px; 
+        margin: 3px 0;
+        margin-right: 8px;
+        border: 2px solid rgb(1,27,51);
+        background-color: rgb(1,27,51);
+        color:rgb(11,164,219);
+        border-radius: 100%;
+        padding: 10px;
+        width: fit-content;
+       
+        }
+        .whypaystack_section_one{
+        color:  rgb(1,27,51);
+        font-size: 17px;
+        flex: 5; 
+        transition: all 250ms ease-in-out;
+        cursor: pointer;
+        background-color: white;
+        padding: 20px;
+        
+        }
+        .whypaystack_section_one ul{
+            /* border: 2px solid red; */
+            margin: 11px 0;
+        }
+        .whypaystack_section_one a{
+        text-decoration: none;
+        font-weight: 600;
+        color: rgb(47,68,88);
+        font-size: 15px;
+        gap: 3px;
+        }
+
+        a:hover{
+        color: rgb(11,164,219) !important;
+        }
+
+
+        .wrap_one, .wrap_two, .wrap_three{
+            display: flex !important;
+            flex-direction: row !important;
+            margin-right: 30px;
+
+
+        } 
+        
+        .list_sharedclass li:last-child{
+            font-weight: 400;
+            font-size: 14.5px;
+        }
+
+        .whypaystack_section_two{
+            flex: 2;
+            background-color: rgb(249,251,252);
+            padding: 10px;  
+            /* border: 1px solid red;           */
+        }
+
+        .whypaystack_section_two ul {
+            /* font-weight: bold; */
+            list-style-type: none; 
+            color: rgb(1,27,51);
+            /* border: 2px solid blue; */
+            margin: 22px 0;
+            gap: 2px;
+
+        }
+        .whypaystack_section_two a{
+            text-decoration: none;
+            color: rgb(47,68,88);
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 250ms ease-in-out;
+        }
+        a:hover{
+            color: rgb(11,164,219) !important ;
+        }
+       
+        .sharedClass{
+            margin: 8px 0;
+            font-size: 11px;
+            color: rgb(102,117,132);
+            font-weight: 500;
+            cursor: default; 
+            transition: all 250ms ease-in-out;
+         
+        }
+
+    .learn_container{
+        display: flex;
+        background-color: white;
+        position: absolute;
+        top: calc(100% + 1rem);
+        color: rgb(26,49,71);
+        box-shadow: 10px 5px 15px 3px rgba(0, 0, 0, 0.1);
+        visibility: hidden;
+        opacity: 0;
+    }
+    .subdesktop_helper{
+        visibility: visible;
+        opacity: 1;
+        transition: all ease-in-out 150ms ;
+        animation: bottomToTop 150ms ease-in;
+    }
+    
+    @keyframes bottomToTop {
+        from{
+            transform: translateY(.5rem);
+        }
+        to{
+            transform: translateY(0);
+        }
+    }
+    .learn_wrap_one li:first-child, .learn_wrap_two li:first-child, 
+    .learn_wrap_three li:first-child, .learn_wrap_four li:first-child{
+        width: 40px;
+    }
+    .learn_section_one{
+        color:  rgb(1,27,51);
+        font-size: 17px;
+        background-color: white;
+        padding: 20px; 
+        transition: all 250ms ease-in-out;
+        cursor: pointer;
+       
+
+    }
+    .learn_section_one ul{
+        margin: 11px 0;
+    }
+    
+    .learn_section_one a{
+        text-decoration: none;
+        font-weight: 600;
+        color: rgb(47,68,88);
+        font-size: 15px;
+        
+    }
+   
+    .learn_wrap_one,.learn_wrap_two, .learn_wrap_three, .learn_wrap_four{
+        display: flex !important;
+        flex-direction: row !important;
+        margin-right: 30px;
+
+    }
+    .learn_sharedclass li:has(a){
+        width: 38vh !important;
+    }
+    .learn_sharedclass li:last-child{
+        font-weight: 400;
+        font-size: 14.5px;
+        padding: 0 0 10px;
+    }
+    .learn_section_two{
+        background-color: white;
+        padding: 20px;
+        transition: all 250ms ease-in-out;
+        cursor: pointer;
+        background-color: rgb(249,251,252);       
+    }
+    
+    .learn_section_two li:first-child{
+        color: rgb(86,114,125);
+        font-size: 11px ;
+        font-weight: 600;
+    }
+    .learn_section_two a{
+        text-decoration: none;
+        font-weight: 600;
+        color: rgb(47,68,88);
+        font-size: 14px;
+        
+    }
+       
 }
